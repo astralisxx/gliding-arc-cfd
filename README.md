@@ -10,7 +10,7 @@ of Asst. Prof. Dr. Necip Berker Üner (METU Chemical Engineering).
 
 <p align="center">
   <img src="media/ga-tube-sizes.gif" alt="Velocity and streamlines on the mid-plane of the electrode plates for the four inlet-tube sizes, cross-fading from the smallest to the largest" width="100%">
-  <br><em>Four inlet tubes, smallest (XS) to largest (L), design flow rate: mid-plane velocity over tube bulk velocity. Key frames are steady-solver snapshots; fades are image blends. <a href="media/ga-tube-sizes.mp4">MP4, 1920 × 1080</a></em>
+  <br><em>Four inlet tubes, smallest (XS) to largest (L), design flow rate: mid-plane velocity over tube bulk velocity. Key frames are steady-solver snapshots; fades are image blends. <a href="media/ga-tube-sizes.mp4">MP4</a></em>
 </p>
 
 The arc forms at the throat, where the electrode edges come closest, and glides downstream with the gas. What it
@@ -65,6 +65,26 @@ V/Q is the space time: reactor volume over volumetric flow rate.
 S, 24 % with M and 12 % with L.
 
 <p align="center">
+  <img src="media/ga-flowrates-L.gif" alt="Velocity and streamlines on the plate mid-plane for tube L at 1, 5 and 10 L/min and at the design flow rate, cross-fading" width="100%">
+  <br><em>Tube L, 1 L/min to design flow rate: throat share 10 % to 12 %. <a href="media/ga-flowrates-L.mp4">MP4</a></em>
+</p>
+
+<details>
+<summary>Tubes S and M</summary>
+
+<p align="center">
+  <img src="media/ga-flowrates-M.gif" alt="Velocity and streamlines on the plate mid-plane for tube M at 10 L/min and at the design flow rate, cross-fading" width="100%">
+  <br><em>Tube M, 10 L/min and design flow rate: throat share 24 % at both. <a href="media/ga-flowrates-M.mp4">MP4</a></em>
+</p>
+
+<p align="center">
+  <img src="media/ga-flowrates-S.gif" alt="Velocity and streamlines on the plate mid-plane for tube S at 10 L/min and at the design flow rate, cross-fading" width="100%">
+  <br><em>Tube S, 10 L/min (laminar) and design flow rate (k-omega SST): throat share 69 % and 64 %. With k-omega SST at both: 65 % and 64 %. <a href="media/ga-flowrates-S.mp4">MP4</a></em>
+</p>
+
+</details>
+
+<p align="center">
   <img src="media/ga-flow-split.png" alt="Net share of the inlet flow through the throat and through the gaps for each tube at the design flow rate and at 10 L/min" width="100%">
   <br><em>Net share of the inlet flow through the throat and the gaps; negative: flowing back.</em>
 </p>
@@ -105,12 +125,10 @@ and 24 % of the inlet flow, while the throat share stays between 67 % and 69 %.
 - **Flat inlet profile.** A developed profile from a longer feed line would change the split.
 - **Transitional jet.** Tube S gives a 65 % throat share with k-omega SST, 69 % laminar.
 - **Frozen fields.** Laminar residence-time tails are upper bounds; for tube S the field is one snapshot.
-- **Short record.** The time-resolved run spans about one gap swing; the period is unresolved.
+- **Short record.** The time-resolved run spans about one gap swing.
 - **No experiment yet.**
 
 ## Related work
-
-Sibling OpenFOAM study: [Woven wire screen](https://github.com/astralisxx/woven-screen-cfd).
 
 <details>
 <summary>Gliding-arc models that take the gas flow as input</summary>
